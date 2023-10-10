@@ -28,7 +28,7 @@ void	put_fractal_img(t_vars *vars, long double zoom)
 
 void	color_pixel(t_data *img, t_vars *vars, int win_xy[2], double iter)
 {
-	if (iter == vars->max_iter & vars->color == 3)
+	if (iter == vars->max_iter && vars->color == 3)
 		my_mlx_pixel_put(img, win_xy[0], win_xy[1], 0x00FFFFFF);
 	else if (iter == vars->max_iter)
 		my_mlx_pixel_put(img, win_xy[0], win_xy[1], 0x00000000);
